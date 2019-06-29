@@ -1,0 +1,26 @@
+using System;
+class ItemType
+{
+    protected string type = "PC";
+}
+class Details : ItemType
+{
+    public void details(string b, int c, string m)
+    {
+        string [] arr = new[] {type,b,c.ToString(),m};
+        foreach (var item in arr)
+        {
+            Console.WriteLine(item);
+        }
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        Details d1 = new Details();
+        d1.details("Lenevo", 25000, "1TB");
+        d1.details("Sony", 30000, "2TB");
+        d1.details("Apple_MAC", 60000, "1TB");
+    }
+}
