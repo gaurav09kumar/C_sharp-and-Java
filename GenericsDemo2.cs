@@ -6,7 +6,7 @@ namespace ConsoleApp17
     class Program
     {
         //GenericDemo
-     public bool Compare3<T>(T a, T b)
+     public bool Compare3<T>(T a, T b) //passing a type in generics
         {
             if (a.Equals(b))
             {
