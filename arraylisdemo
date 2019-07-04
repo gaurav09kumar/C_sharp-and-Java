@@ -1,0 +1,57 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+namespace ConsoleApp17
+{
+   class ArrayListDemo
+    {
+        /* It represents an ordered collection of an object that can be indexed individually. 
+         * It is basically an alternative to an array. 
+         * However, unlike array you can add and 
+         * remove items from a list at a specified position using an index and 
+         * the array resizes itself automatically. 
+         * It also allows dynamic memory allocation, adding, searching and sorting items in the list.*/
+        static void Main()
+        {
+            //creating an arraylist object
+            //
+            ArrayList a1 = new ArrayList();
+            a1.Add(10);
+            a1.Add(10000);
+            a1.Add(6);
+            a1.Add(567);
+            a1.Add(800);
+
+            //displaying members of array list
+            foreach (var items in a1)
+            {
+                Console.Write(items+" ");
+            }
+            Console.WriteLine();
+            //different properties of array list
+            Console.WriteLine("Capacity is : "+ (a1.Capacity));
+            Console.WriteLine("Count is : "+a1.Count);
+            Console.WriteLine("Fixed Size :"+a1.IsFixedSize);
+            Console.WriteLine("Read Only: "+a1.IsReadOnly);
+
+            
+            //Inserting items into the list
+            a1.Insert(0,77);
+            a1.Insert(1,99);
+
+            Console.WriteLine();
+            //displaying members of array list
+            foreach (var items in a1)
+            {
+                Console.WriteLine(items + " ");
+            }
+
+            a1.Sort();
+            Console.WriteLine();
+            foreach (var items in a1)
+            {
+                Console.WriteLine(items + " ");
+            }
+        }
+    }
+}
