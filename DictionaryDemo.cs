@@ -7,7 +7,7 @@ namespace ConsoleApp17
     {
         static void Main()
         {
-            //here dictionary is accepting int and any values here
+            //here dictionary is accepting int and any values
             Dictionary<int, object> dt = new Dictionary<int, object>();
             dt.Add(1,"ABC");
             dt.Add(2, 300);
