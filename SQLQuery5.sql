@@ -1,0 +1,10 @@
+USE [WebStore]
+GO
+
+DECLARE	@return_value int
+
+EXEC	@return_value = [dbo].[GetOrder]
+
+SELECT	'Return Value' = @return_value
+
+GO
